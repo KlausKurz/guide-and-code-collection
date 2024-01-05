@@ -15,7 +15,7 @@ dd bs=64M if=/dev/sda2 | gzip  > <destination>/dev-sda2.gz
 # restore with rescue console on new hardware from <source>
 sgdisk --load-backup=<source>/sgdisk-dev-sda /dev/sda
 gzip -c -d <source>/dev-sda1.gz | dd of=/dev/sda1
-gzip -c -d <source>/dev-sdb1.gz | dd of=/dev/sdb1
+gzip -c -d <source>/dev-sda2.gz | dd of=/dev/sda2
 zpool create -f -o ashift=12 rpool /dev/disk/by-id/<ata-xxxxxxxxxxxx>-part3 
 gzip -c -d <source>/backup-pve-rpool@export.gz | zfs receive -u -v -F rpool
 zfs set mountpoint=/rpool       rpool
