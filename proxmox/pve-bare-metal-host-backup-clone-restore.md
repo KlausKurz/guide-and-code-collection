@@ -1,5 +1,5 @@
-# backup a running proxmox bare metal host<br>and restore or clone to new hardware
-This is a proof of concept for backup and restore or clone a proxmox bare metal host on a home lab system.<br>This is not about VM backup.<br> 
+# backup a running proxmox zfs bare metal host<br>and restore or clone to new hardware
+This is a proof of concept for backup and restore or clone a proxmox zfs bare metal host on a home lab system.<br>This is not about VM backup.<br> 
 **For production environments more tests are necessary.**
 
 ## TL;TR
