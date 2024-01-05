@@ -98,7 +98,7 @@ fdisk -l /dev/sd{a,b}
       check mountpoints
 ````
 ## backup
-An USB stick was used for the filetransfer.
+An USB stick is used for the filetransfer.
 ### stop the necessary proxmox services
 Before taking a snapshot, stop as many running services as possible to ensure consistency.
 ````
@@ -196,7 +196,7 @@ nano /etc/ssh/sshd_config
  # set password
 passwd
 ````
-### login with ssh
+### login with ssh on target system
 #### get host information
 ````
 fdisk -l
